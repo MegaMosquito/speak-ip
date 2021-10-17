@@ -13,7 +13,7 @@ Your eye pee address is 1 9 2 dot 1 6 8 dot 1 dot 1 2 3
 The `espeak` tool can pronounce many other languages, so hack away if you want that. Here is some documentation:
    [http://espeak.sourceforge.net/docindex.html](http://espeak.sourceforge.net/docindex.html)
 
-By default it only looks at the `eth0` interface. If yu plan to use WiFi then edit the Makefile to specify `wlan0` as the `INTERFACE_NAME`. If deploying wiith Open Horizon, set the `INTERFACE_NAME` as a Service variable.
+By default it only looks at the `wlan0` interface. If yu plan to use a wired connection then edit the Makefile to specify `eth0` as the `INTERFACE_NAME`.
 
 Of course, specifying the `INTERFACE_NAME` is inconvenient. You could do something better, like determine the hosts's "default route" and then find the host interface that was on that network, and then announce the IP address of that interface. If you did that, then then you would not need to pass any `INTERFACE_NAME` at all. But I was tooo lazy to code that! :-)
 
